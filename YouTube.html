@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YouTube Clone</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <span class="logo-icon">▶</span> YouTube
+        </div>
+        <div class="search-bar">
+            <input type="text" placeholder="Tìm kiếm...">
+            <button>🔍</button>
+        </div>
+        <div class="user-icon">👤</div>
+    </header>
+    <div class="video-grid">
+        <div class="video">
+            <video controls>
+                <source src="/storage/emulated/0/Download/T2 99LTT.mp4" type="video/mp4">
+                Trình duyệt không hỗ trợ video.
+            </video>
+            <h3>Tập 2</h3>
+        </div>
+        <div class="video">
+            <video controls onclick="toggleFullScreen(this)">
+                <source src="/storage/emulated/0/Download/T3 99LTT.mp4" type="video/mp4">
+                Trình duyệt không hỗ trợ video.
+            </video>
+            <h3>Tập 3</h3>
+        </div>
+        <div class="video">
+            <video controls onclick="toggleFullScreen(this)">
+                <source src="/storage/emulated/0/Download/T4 99LTT.mp4" type="video/mp4">
+                Trình duyệt không hỗ trợ video.
+            </video>
+            <h3>Tập 4</h3>
+        </div>
+        <div class="video">
+            <video controls onclick="toggleFullScreen(this)">
+                <source src="/storage/emulated/0/Download/T5 99LTT.mp4" type="video/mp4">
+                Trình duyệt không hỗ trợ video.
+            </video>
+            <h3>Tập 5</h3>
+        </div>
+        <div class="video">
+            <video controls onclick="toggleFullScreen(this)">
+                <source src="/storage/emulated/0/Download/T6 99LTT.mp4" type="video/mp4">
+                Trình duyệt không hỗ trợ video.
+            </video>
+            <h3>Tập 6</h3>
+        </div>
+        <div class="video">
+            <video controls onclick="toggleFullScreen(this)">
+                <source src="/storage/emulated/0/Download/T7 99LTT.mp4" type="video/mp4">
+                Trình duyệt không hỗ trợ video.
+            </video>
+            <h3>Tập 7</h3>
+        </div>
+        <div class="video">
+            <video controls onclick="toggleFullScreen(this)">
+                <source src="/storage/emulated/0/Download/T8 99LTT.mp4" type="video/mp4">
+                Trình duyệt không hỗ trợ video.
+            </video>
+            <h3>Tập 8</h3>
+        </div>
+        <div class="video">
+            <video controls onclick="toggleFullScreen(this)">
+                <source src="/storage/emulated/0/Download/Tc 99LTT.mp4" type="video/mp4">
+                Trình duyệt không hỗ trợ video.
+            </video>
+            <h3>Tập cuối</h3>
+        </div>
+    </div>
+    <script>
+        function toggleFullScreen(video) {
+            if (!document.fullscreenElement) {
+                if (video.requestFullscreen) {
+                    video.requestFullscreen();
+                } else if (video.mozRequestFullScreen) { // Firefox
+                    video.mozRequestFullScreen();
+                } else if (video.webkitRequestFullscreen) { // Chrome, Safari, Opera
+                    video.webkitRequestFullscreen();
+                } else if (video.msRequestFullscreen) { // IE/Edge
+                    video.msRequestFullscreen();
+                }
+            } else {
+                if (document.exitFullscreen) {
+                    document.exitFullscreen();
+                }
+            }
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,92 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #ff0000;
+    color: white;
+    padding: 10px 20px;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+}
+
+.logo-icon {
+    font-size: 30px;
+    margin-right: 5px;
+}
+
+.search-bar {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.search-bar input {
+    width: 50%;
+    padding: 8px;
+    font-size: 16px;
+}
+
+.search-bar button {
+    padding: 8px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.user-icon {
+    font-size: 24px;
+}
+
+/* Video Grid */
+.video-grid {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 20px;
+}
+
+.video {
+    width: 1000px;
+    height: auto;
+    background: white;
+    padding: 3px;
+    border-radius: 3px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+video {
+    width: 100%;
+    border-radius: 3px;
+}
+video {
+    width: 100%;
+    max-width: auto; /* Ban đầu video nhỏ */
+    height: auto;
+    display: block;
+    margin: 3px auto;
+    cursor: pointer; /* Biểu tượng chuột khi di vào */
+    transition: all 0.3s ease; /* Hiệu ứng mượt mà */
+}
+
+video:fullscreen {
+    max-width: 100%;
+    width: 100vw;
+    height: 100vh;
+    object-fit: contain; /* Hiển thị vừa khung hình */
+}
+
+video:focus {
+    outline: none; /* Bỏ viền xanh khi bấm vào */
+}
